@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ws": "latest",
+    "uuid": "latest"
+  },
+  "scripts": {
+    "start": "node websocketNode.js"
+  }
+}
