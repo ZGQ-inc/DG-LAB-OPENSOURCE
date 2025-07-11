@@ -32,8 +32,7 @@ const waveData = {
 }
 
 function connectWs() {
-    wsConn = new WebSocket("https://dg-ws.zgqinc.gq/");
-    // wsConn = new WebSocket("ws://12.34.56.78:9999/");
+    wsConn = new WebSocket("ws://12.34.56.78:9999/");
     //wsConn = new WebSocket("ws://localhost:9999/");
     wsConn.onopen = function (event) {
         console.log("WebSocket连接已建立");
@@ -162,7 +161,7 @@ function toggleSwitch(id) {
     element.classList.toggle("switch-off");
 }
 
-function addOrIncrease(type, channelIndex, strength) {
+function decreaseOrIncrease(type, channelIndex, strength) {
     // 1 减少一  2 增加一  3 设置到
     // channel:1-A    2-B
     // 获取当前频道元素和当前值
