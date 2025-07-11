@@ -32,7 +32,8 @@ const waveData = {
 }
 
 function connectWs() {
-    wsConn = new WebSocket("ws://12.34.56.78:9999/");
+    wsConn = new WebSocket("https://dg-ws.zgqinc.gq/");
+    // wsConn = new WebSocket("ws://12.34.56.78:9999/");
     //wsConn = new WebSocket("ws://localhost:9999/");
     wsConn.onopen = function (event) {
         console.log("WebSocket连接已建立");
