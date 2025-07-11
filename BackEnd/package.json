@@ -3,7 +3,11 @@
     "ws": "latest",
     "uuid": "latest"
   },
+  "devDependencies": {
+    "pm2": "latest"
+  },
   "scripts": {
-    "start": "node websocketNode.js"
+    "start": "node websocketNode.js",
+    "pm2": "pm2 start websocketNode.js --name websocketNode"
   }
 }
